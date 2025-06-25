@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climate Change Campaign Carousel</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      background-color: #3ed97f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ddd736;
+      min-height: 100vh;
+    }
+    .carousel-item {
+      min-height: 450px;
+      padding: 3rem 2rem;
+      background-color: #3ed97f;
+      color: #ddd736;
+    }
+    .carousel-item h2 {
+      color: #ddd736;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .cards-row {
+      gap: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: #2f9d5c;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgb(44 62 80 / 0.1);
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #ddd736;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgb(44 62 80 / 0.25);
+    }
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-bottom: 4px solid #ddd736;
+    }
+    .card-body {
+      padding: 1rem 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+      color: #ddd736;
+    }
+    .card-text {
+      flex-grow: 1;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #f5f7ba;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(72%) sepia(92%) saturate(630%) hue-rotate(85deg) brightness(94%) contrast(90%);
+    }
+    .call-to-action-btn {
+      background-color: #ddd736;
+      border: none;
+      color: #3e7f3d;
+      padding: 12px 30px;
+      font-size: 1.25rem;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .call-to-action-btn:hover {
+      background-color: #c9c428;
+      color: #2a5c28;
+    }
+    .last-slide-text {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #ddd736;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="climateCarousel" class="carousel slide" data-bs-ride="false">
+
+    <div class="carousel-inner">
+
+      <!-- Slide One -->
+      <div class="carousel-item active text-center">
+        <h2>Campaign for Climate Change</h2>
+        <p style="max-width: 600px; margin: 0 auto; font-size:1.2rem; color:#f5f7ba;">
+          Let's unite to fight climate change! Every action counts – from our homes to the world stage. Ready to make a difference?
+        </p>
+        <img src="Images/earht.jpeg" alt="Earth from space" class="mt-4" style="width: 90%;max-width: 500px;height: auto; border-radius: 15px; box-shadow: 0 0 20px rgba(221, 215, 54, 0.4);" />
+      </div>
+
+      <!-- Slide Two -->
+      <div class="carousel-item text-center">
+        <h2>What You Can Do Locally</h2>
+        <div class="cards-row mt-4">
+
+          <div class="card">
+            <img src="Images/eco transport.jpeg" alt="Public transport" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Choose Eco Transport</h5>
+              <p class="card-text">
+                Use public transport, bike, or walk whenever possible. It reduces carbon emissions and traffic pollution in your community.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/reduce reuse recycle.png" alt="Recycling" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Reduce, Reuse & Recycle</h5>
+              <p class="card-text">
+                Cut down on waste by recycling and reusing materials. Small daily habits help reduce landfill and resource use.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/trees and gardens.jpeg" alt="Plant trees" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Plant Trees & Gardens</h5>
+              <p class="card-text">
+                Trees absorb CO₂ and cool the environment. Start or join local tree-planting or community garden projects.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide Three -->
+      <div class="carousel-item text-center">
+        <h2>National Level Actions</h2>
+        <div class="cards-row mt-4">
+
+          <div class="card">
+            <img src="Images/renewable energy.jpeg" alt="Renewable energy" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Invest in Renewables</h5>
+              <p class="card-text">
+                Governments can fund solar, wind, and other renewable projects to reduce reliance on fossil fuels nationwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/green policy.jpeg" alt="Green policies" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Enforce Green Policies</h5>
+              <p class="card-text">
+                Strong laws and regulations help cut emissions, protect forests, and promote sustainable farming and industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/educate.jpeg" alt="Public awareness" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Educate the Public</h5>
+              <p class="card-text">
+                National campaigns and education programs raise awareness and encourage eco-friendly choices across the country.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide Four -->
+      <div class="carousel-item text-center">
+        <h2>International Cooperation</h2>
+        <div class="cards-row mt-4">
+
+          <div class="card">
+            <img src="Images/global action.jpeg" alt="Climate agreements" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Global Agreements</h5>
+              <p class="card-text">
+                Countries working together through agreements like the Paris Accord help set emission targets and share technology.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/support nations.jpeg" alt="Financial support" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Support Developing Nations</h5>
+              <p class="card-text">
+                Wealthier countries provide funding and expertise to help vulnerable nations adapt and reduce emissions.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="Images/clean energy technology.jpeg" alt="Technology exchange" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Technology Sharing</h5>
+              <p class="card-text">
+                Sharing clean energy technology worldwide accelerates climate solutions and global sustainability.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide Five -->
+      <div class="carousel-item text-center">
+        <h2>Let’s Take Action Now!</h2>
+        <p style="max-width: 600px; margin: 0 auto; font-size:1.2rem; color:#f5f7ba;">
+          Every choice matters. Together, we can slow climate change and build a greener, healthier planet for future generations. Start with you — share, act, and inspire!
+        </p>
+        <button class="call-to-action-btn">Take Action Today</button>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#climateCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#climateCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+</html>
